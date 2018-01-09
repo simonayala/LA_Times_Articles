@@ -36,7 +36,7 @@ def build_word_counts(docs):
 def main():
     """Main"""
     path = sys.argv[1]
-    with open(path) as (xmlfile):
+    with open('Text.txt') as (xmlfile):
         docs = parse_xml(xmlfile)
         build_word_counts(docs)
 
